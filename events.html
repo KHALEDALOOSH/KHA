@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item hideUsers">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="employees.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hideUsers" href="requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hideUsers" href="transactions.html"
+                >Financial transactions</a
+              >
+            </li>
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+    <div class="events padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 search">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="row" id="sale-houses"></div>
+        </div>
+        <div class="row" id="users-block">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <img
+                class="card-img-top i"
+                src="images/istockphoto-1307457287-170667a.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4>Tour around university</h4>
+                <p class="card-text des">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content. Some quick example text to build on the card title
+                  and make up the bulk of the card's content. Some quick example
+                  text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card
+                  title and make up the bulk of the card's content. Some quick
+                  example text to build on the card title and make up the bulk
+                  of the card's content. Some quick example text to build on the
+                  card title and make up the bulk of the card's content. Some
+                  quick example text to build on the card title and make up the
+                  bulk of the card's content. Some quick example text to build
+                  on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content. Some quick example text to build on the card title
+                  and make up the bulk of the card's content. Some quick example
+                  text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card
+                  title and make up the bulk of the card's content. Some quick
+                  example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <img
+                class="card-img-top i"
+                src="images/istockphoto-1307457287-170667a2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4>Tour around university</h4>
+                <p class="card-text des">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card">
+              <img
+                class="card-img-top i"
+                src="images/istockphoto-1307457287-170667a2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4>Tour around university</h4>
+                <p class="card-text des">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        ><i
+          class="fa fa-plus"
+          id="scroll-top"
+          data-toggle="modal"
+          data-target=".modal4"
+          data-id=""
+        ></i
+      ></a>
+    </div>
+    <!--Modal Add-->
+    <div
+      class="modal fade modal4"
+      id="modal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <h2>Add Event:</h2>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-xs-height">
+                <form class="signup-popup" id="addAdmin">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="btn-block"
+                    name="name"
+                    required
+                  />
+                  <textarea
+                  placeholder="Description"
+                  class="btn-block"
+                  name="description"
+                  required>
+                  </textarea>
+                  <div class="error-message text-center"></div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" value="Submit">
+                      Submit
+                    </button>
+                    <button
+                      class="btn btn-danger button delete"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

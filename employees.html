@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/employees.css" />
+
+    <title>Employees</title>
+  </head>
+
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item hideUsers">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="employees.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hideUsers" href="requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hideUsers" href="transactions.html"
+                >Financial transactions</a
+              >
+            </li>
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+    <div class="employees padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 search">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="row" id="sale-houses"></div>
+        </div>
+
+        <div class="row" id="users-active">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card text-center">
+              <img src="images/user.webp" alt="Avatar" />
+              <h4>Ahmad Ali</h4>
+              <h5>ahmad@gmail.com</h5>
+              <h5>0955734129</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card text-center">
+              <img src="images/user.webp" alt="Avatar" />
+              <h4>Khaled ahmad </h4>
+              <h5>khaled@gmail.com</h5>
+              <h5>0937039576</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card text-center">
+              <img src="images/user.webp" alt="Avatar" />
+              <h4> abd addas</h4>
+              <h5>abd@gmail.com</h5>
+              <h5>0943562775</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card text-center">
+              <img src="images/user.webp" alt="Avatar" />
+              <h4>Mohamad ali</h4>
+              <h5>mohamad@gmail.com</h5>
+              <h5>0984673465</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="card text-center">
+              <img src="images/user.webp" alt="Avatar" />
+              <h4>Amane</h4>
+              <h5>amane@gmail.com</h5>
+              <h5>0955734449</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        ><i
+          class="fa fa-plus"
+          id="scroll-top"
+          data-toggle="modal"
+          data-target=".modal4"
+          data-id=""
+        ></i
+      ></a>
+    </div>
+    <!--Modal Add-->
+    <div
+      class="modal fade modal4"
+      id="modal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <h2>Add Employee:</h2>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-xs-height">
+                <form class="signup-popup" id="addAdmin">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="btn-block"
+                    name="first"
+                    required
+                  />
+                  <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="btn-block"
+                  name="last"
+                  required
+                />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="btn-block"
+                    name="email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder=" Phone Number"
+                    class="btn-block"
+                    name="address"
+                    required
+                  />
+                  <input
+                  type="password"
+                  placeholder=" Passsword"
+                  class="btn-block"
+                  name="password"
+                  required
+                />
+                  <div class="error-message text-center"></div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" value="Submit">
+                      Submit
+                    </button>
+                    <button
+                      class="btn btn-danger button delete"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
